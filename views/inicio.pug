@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Río de Janeio
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        
+        .row.mb-5
+            .col-md-6
+                p Ut hendrerit, urna eu efficitur rhoncus, mi eros gravida augue, posuere imperdiet lectus nisl at odio. Fusce vel lorem velit. Phasellus vitae ipsum iaculis, mollis sapien nec, malesuada leo. Maecenas suscipit rutrum sapien in molestie. Proin efficitur eros sed purus mollis, id vulputate mi cursus. Nam sagittis mi at dignissim tincidunt. Aliquam eu pretium nulla. Etiam ullamcorper lobortis orci, eu dictum tellus blandit et. 
+
+                p Integer vitae odio porta diam dignissim lobortis sit amet at nisl. Nulla ultrices quam magna, ut ornare nisi dapibus vitae. Proin rutrum orci porta enim iaculis luctus. Fusce lobortis sem sed erat iaculis, et iaculis justo auctor. In id iaculis ex.
+            
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg" alt="imagen nosotros" class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container
+            .row 
+                .col-md-6
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2.500 USD
+
+    .container 
+        h2.mt-5.text-center Testimonios
+        
+        include ./layout/bloque_testimonios
